@@ -38,7 +38,7 @@ git clone https://github.com/seu-user/galeria-interativa.git
 ```
 
 ## 🎓 Contexto do Projeto
-Projeto desenvolvido durante o curso Técnico em Desenvolvimento de Sistemas no  [SENAI Jandira](https://sp.senai.br/unidade/jandira/)
+Projeto desenvolvido durante o curso Técnico em Desenvolvimento de Sistemas no <a href="https://sp.senai.br/unidade/jandira/" style="color: red; text-decoration: none;">SENAI Jandira</a>
 *"Slider desenvolvido como atividade pós-férias para retomar os conceitos de consumo de APIs e manipulação de LIMA e JS"*
 
 ### 🏀 Autor
