@@ -3,23 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="./styles.css">
   <script src="./script.js" defer></script>
   <title>Slider de Fotos</title>
 </head>
 <body>
-  <div class="slider-container">
-    <button class="slider-btn prev-btn">&lt;</button>
+  <div class="background"></div>
+  
+  <div class="container">
+    <h1 class="title"></h1>
     
-    <div class="slide">
-      <img src="" alt="Foto do slider" class="slide-image">
+    <div class="slider-container">
+      <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+      
+      <div class="slide">
+        <img src="" alt="Foto do slider" class="slide-image">
+        <div class="caption-container">
+          <p class="caption"></p>
+          <p class="date"></p>
+        </div>
+      </div>
+      
+      <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
     </div>
     
-    <button class="slider-btn next-btn">&gt;</button>
-  </div>
-  
-  <div class="dots-container">
-    <!-- Os dots serão adicionados dinamicamente via JavaScript -->
+    <div class="dots-container">
+      <!-- Os dots serão adicionados dinamicamente via JavaScript -->
+    </div>
   </div>
 </body>
 </html>

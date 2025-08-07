@@ -6,6 +6,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextBtn = document.querySelector('.next-btn');
     const dotsContainer = document.querySelector('.dots-container');
   
+    // Criar elementos da legenda dinamicamente
+    const captionContainer = document.createElement('div');
+    captionContainer.className = 'caption-container';
+    
+    const captionElement = document.createElement('p');
+    captionElement.className = 'caption';
+    
+    const dateElement = document.createElement('p');
+    dateElement.className = 'date';
+    
+    captionContainer.appendChild(captionElement);
+    captionContainer.appendChild(dateElement);
+    slide.appendChild(captionContainer);
+  
     let fotos = [];
     let currentIndex = 0;
     let intervalId;
@@ -22,6 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
       } catch (error) {
         console.error('Erro:', error);
         slideImage.alt = 'Erro ao carregar imagens';
+        captionElement.textContent = 'Erro ao carregar as fotos';
+        dateElement.textContent = '';
       }
     }
   
@@ -41,6 +57,10 @@ document.addEventListener('DOMContentLoaded', () => {
       // Adiciona eventos aos botões
       prevBtn.addEventListener('click', prevSlide);
       nextBtn.addEventListener('click', nextSlide);
+      
+      // Eventos de hover para mostrar/ocultar legenda
+      slide.addEventListener('mouseenter', showCaption);
+      slide.addEventListener('mouseleave', hideCaption);
     }
   
     // Mostra o slide no índice especificado
@@ -56,13 +76,27 @@ document.addEventListener('DOMContentLoaded', () => {
         currentIndex = index;
       }
       
-      // Atualiza a imagem e legenda
+      // Atualiza a imagem e informações
       const foto = fotos[currentIndex];
-      slideImage.src = foto.imagem; 
+      slideImage.src = foto.imagem;
       slideImage.alt = foto.legenda || 'Foto do slider';
+      captionElement.textContent = foto.legenda || '';
+      dateElement.textContent = foto.data ? `Data: ${foto.data}` : '';
       
       // Atualiza os dots ativos
       updateDots();
+    }
+  
+    // Mostra a legenda
+    function showCaption() {
+      captionContainer.style.opacity = '1';
+      captionContainer.style.transform = 'translateY(0)';
+    }
+  
+    // Oculta a legenda
+    function hideCaption() {
+      captionContainer.style.opacity = '0';
+      captionContainer.style.transform = 'translateY(100%)';
     }
   
     // Cria os dots de navegação
