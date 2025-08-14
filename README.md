@@ -49,3 +49,7 @@ Projeto desenvolvido durante o curso Técnico em Desenvolvimento de Sistemas no 
 
 #
 <!-- <table> <tr> <td align="center"> <a href="https://github.com/Bielxs633"> <img src="https://avatars.githubusercontent.com/u/SEU_USER_ID?v=4" width="100px;" alt="Foto do Autor"/> <br/> <sub><b>Gabriel Soares</b></sub> </a> </td> </tr> </table><p align="left"> <a href="https://www.linkedin.com/in/gabriel-soares-3098782b0/" target="_blank"> <img src="https://img.icons8.com/color/48/000000/linkedin.png" width="30"/> </a> <a href="https://github.com/Bielxs633" target="_blank"> <img src="https://img.icons8.com/fluent/48/000000/github.png" width="30"/> </a> </p>  -->
+
+<!-- <div align="center"> <img src="https://www.sp.senai.br/assets/img/senai-logo.png" width="150" alt="SENAI"> <p>Projeto desenvolvido como atividade pós-férias no curso Técnico em Desenvolvimento de Sistemas</p> <a href="https://sp.senai.br/unidade/jandira/" style="color: #E74C3C; font-weight: bold; text-decoration: none;">SENAI Jandira</a> </div> -->
+
+<!-- <table> <tr> <td align="center"> <a href="https://github.com/Bielxs633"> <img src="https://avatars.githubusercontent.com/u/SEU_USER_ID?v=4" width="100px;" alt="Gabriel Soares"/> <br /> <sub><b>Gabriel Soares</b></sub> </a> </td> </tr> </table><p align="left"> <a href="https://www.linkedin.com/in/gabriel-soares-3098782b0/"> <img src="https://img.icons8.com/color/48/000000/linkedin.png" width="30"/> </a> <a href="https://github.com/Bielxs633"> <img src="https://img.icons8.com/fluent/48/000000/github.png" width="30"/> </a> </p> -->
